@@ -8,6 +8,8 @@ Site estático com Vite, React e TypeScript.
 - `npm run dev`
 - `npm run build`
 
+GSAP + ScrollTrigger animam a entrada do hero, os cards e as seções ao rolar. A preferência `prefers-reduced-motion` desativa esses movimentos para acessibilidade.
+
 ## Deploy no GitHub Pages
 
 O workflow `.github/workflows/deploy-pages.yml` publica o `dist/` para o endereço `https://dg-senac.github.io/LandingPage-EcoVerify/`. Em Settings → Pages, selecione GitHub Actions como origem. `SITE_URL` fica em `src/config.ts`.
