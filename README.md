@@ -1,6 +1,6 @@
 # EcoVerify — landing page
 
-Landing page oficial do EcoVerify, em português do Brasil. Projeto estático com Vite, React e TypeScript; publicado na Vercel.
+Landing page oficial do EcoVerify, em português do Brasil. Projeto estático com Vite, React e TypeScript. O GitHub Actions publica automaticamente no GitHub Pages a cada push em `main`; o endereço do projeto é https://dg-senac.github.io/LandingPage-EcoVerify/.
 
 ## Desenvolvimento
 
@@ -12,7 +12,7 @@ Landing page oficial do EcoVerify, em português do Brasil. Projeto estático co
 ## Links e publicação
 
 - Repositório do app, demo web, termos e privacidade: altere os links nos componentes `src/site.tsx` e `src/download.tsx`.
-- URL pública do site: ajuste a constante exportada `SITE_URL` em `src/config.ts` e os domínios em `robots.txt` e `sitemap.xml` depois do deploy. O valor atual (`https://ecoverify.vercel.app`) é provisório, não foi confirmado. A Vercel detecta Vite automaticamente; `vercel.json` reescreve `/baixar` para a SPA, permitindo recarregar a rota.
+- URL pública: `SITE_URL` em `src/config.ts`; no deploy atual está definida como `https://dg-senac.github.io/LandingPage-EcoVerify/`. `robots.txt` e `sitemap.xml` usam esse domínio. O workflow `.github/workflows/deploy-pages.yml` compila e publica o diretório `dist` no GitHub Pages. Em Settings → Pages, escolha **GitHub Actions** como origem de publicação. Para Vercel, remova `GITHUB_PAGES` do build (base `/`) e mantenha `vercel.json` para recarregar `/baixar`.
 - Contato de organizações: substitua `SEU-EMAIL-AQUI` em `src/site.tsx` por um e-mail de contato.
 - Marca Fone Protocol: o selo tipográfico atual é apenas um link textual para https://fone.dev. Os arquivos oficiais de logo devem ser usados sem recolorir nem distorcer, com a versão escura sobre fundo claro ou a branca sobre fundo escuro. **Uso de marca/logo depende de autorização da Fone Protocol; não há alegação de parceria ou endosso.**
 
