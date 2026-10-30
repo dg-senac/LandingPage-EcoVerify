@@ -1,2 +1,2 @@
-// Atualize após conectar o domínio/site final na Vercel.
-export const SITE_URL = 'https://ecoverify.vercel.app';
+// URL canônica usada no QR code e nos metadados do site.
+export const SITE_URL = 'https://dg-senac.github.io/LandingPage-EcoVerify/';
